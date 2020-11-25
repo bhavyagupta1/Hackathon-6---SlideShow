@@ -65,8 +65,8 @@ const App = (props) => {
 function NewSlide(props) {
   return (
     <div>
-      <h1>{props.Title}</h1>
-      <h1 >{props.Text}</h1>
+      <h1 data-testid="title">{props.Title}</h1>
+      <p data-testid="text" >{props.Text}</p>
     </div>
   )
 }
