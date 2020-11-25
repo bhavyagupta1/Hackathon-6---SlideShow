@@ -44,15 +44,18 @@ const App = (props) => {
 
 
       <button data-testid="button-restart"
-        onClick={resetFirstSlide}>
+        onClick={resetFirstSlide}
+        >
         Restart
     </button>
       <button data-testid="button-prev"
-        onClick={prevSlide}>
+        onClick={prevSlide}
+        disabled={idx==0}>
         Prev
     </button>
       <button data-testid="button-next"
-        onClick={createSlide}>
+        onClick={createSlide}
+        disabled={idx==slides.length-1}>
         Next
     </button>
     </div>
